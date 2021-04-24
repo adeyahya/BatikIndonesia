@@ -28,4 +28,4 @@ const BatikListItem: React.FC<BatikListItem> = ({item, ...props}) => {
   );
 };
 
-export default BatikListItem;
+export default React.memo(BatikListItem);

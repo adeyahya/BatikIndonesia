@@ -8,12 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* BatikIndonesiaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* BatikIndonesiaTests.m */; };
+		0C05C44A870749CAA55E176C /* Livvic-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 814198BC81C748C49F0E671D /* Livvic-Regular.ttf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		141803CCF1CD4F34A69B5DE1 /* Livvic-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7C4C5C9196A84C1E94E5829E /* Livvic-BoldItalic.ttf */; };
+		4CD89DFF265843219D0C88D8 /* Livvic-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 88AE65F7346E453688987EC9 /* Livvic-Bold.ttf */; };
+		6495FCEFF2044E4DBEEB39AC /* Livvic-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FBBC78F25C504ACF9F829615 /* Livvic-ThinItalic.ttf */; };
+		65791B6F1AFF49D9A2D3EEB7 /* Livvic-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3155EBB74BC744DE8356FF91 /* Livvic-Italic.ttf */; };
+		6C82F309185345A891241B3B /* Livvic-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DE8F5C8B37784A519D0D9F98 /* Livvic-Black.ttf */; };
 		6CA2493EAD778C4C738DB43A /* libPods-BatikIndonesia-BatikIndonesiaTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D864D856D33CA32E4A0E41C0 /* libPods-BatikIndonesia-BatikIndonesiaTests.a */; };
+		6D04967D66CE4CE48E0DB823 /* Livvic-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 97B5599F533F4232A0FFA36A /* Livvic-SemiBoldItalic.ttf */; };
+		6F18B2E1926A459280CD1900 /* Livvic-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A964E5E45C145738A57C1F6 /* Livvic-LightItalic.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		95F6D84DA93C42DCB323E11B /* Livvic-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E8E10B4C09DC4813B533F4C2 /* Livvic-BlackItalic.ttf */; };
+		A39DDD30E3B549F6B33A7007 /* Livvic-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 94B973B6E4DB47748CFF4857 /* Livvic-Thin.ttf */; };
+		B2BDAF05AC1B4FF1B6FB41DC /* Livvic-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCDB2CB8C0444E8E9BE19798 /* Livvic-SemiBold.ttf */; };
 		C5B393464E8BF48631DD40B2 /* libPods-BatikIndonesia.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ED8E0C8773B5470CF607B50 /* libPods-BatikIndonesia.a */; };
+		D2EB8D30804C49D2B988BFD4 /* Livvic-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E8FDBC7D8FB24D29B4465E38 /* Livvic-MediumItalic.ttf */; };
+		D3944B2CDC374A43B852ED3C /* Livvic-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37BB0F617ABB47D7812D386E /* Livvic-Light.ttf */; };
+		D9DE906DC47C461FAA77141A /* Livvic-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FB1CE5D6ABC04B9BAC861B14 /* Livvic-Medium.ttf */; };
+		DFBA923434A843D4A483903F /* Livvic-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2696B3D6DFEF4330AADC7D06 /* Livvic-ExtraLightItalic.ttf */; };
+		E519B41886CB4B7C856A07E2 /* Livvic-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6AAE298D75D74D46A03A5572 /* Livvic-ExtraLight.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,20 +46,52 @@
 		00E356EE1AD99517003FC87E /* BatikIndonesiaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BatikIndonesiaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* BatikIndonesiaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BatikIndonesiaTests.m; sourceTree = "<group>"; };
+		030D8ED8952A49E1821BD3C4 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* BatikIndonesia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BatikIndonesia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = BatikIndonesia/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = BatikIndonesia/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = BatikIndonesia/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = BatikIndonesia/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = BatikIndonesia/main.m; sourceTree = "<group>"; };
+		266028EBE40449499C02E910 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
+		2696B3D6DFEF4330AADC7D06 /* Livvic-ExtraLightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Livvic-ExtraLightItalic.ttf"; path = "../src/assets/fonts/Livvic-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		3155EBB74BC744DE8356FF91 /* Livvic-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Livvic-Italic.ttf"; path = "../src/assets/fonts/Livvic-Italic.ttf"; sourceTree = "<group>"; };
+		37BB0F617ABB47D7812D386E /* Livvic-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Livvic-Light.ttf"; path = "../src/assets/fonts/Livvic-Light.ttf"; sourceTree = "<group>"; };
 		3C05A3B9B31D106C2518BF2F /* Pods-BatikIndonesia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BatikIndonesia.release.xcconfig"; path = "Target Support Files/Pods-BatikIndonesia/Pods-BatikIndonesia.release.xcconfig"; sourceTree = "<group>"; };
 		3ED8E0C8773B5470CF607B50 /* libPods-BatikIndonesia.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BatikIndonesia.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		449D6126E996466BA6DB34F1 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
+		4A06334BC1D44389BB621189 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
+		5A964E5E45C145738A57C1F6 /* Livvic-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Livvic-LightItalic.ttf"; path = "../src/assets/fonts/Livvic-LightItalic.ttf"; sourceTree = "<group>"; };
+		5C75F82A066B41E0BEF425B7 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
+		5D6AF62AF24A4597ABFE8A8A /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
+		6AAE298D75D74D46A03A5572 /* Livvic-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Livvic-ExtraLight.ttf"; path = "../src/assets/fonts/Livvic-ExtraLight.ttf"; sourceTree = "<group>"; };
+		72F487BA668046768A889833 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
 		759573B9225D4684890B29B4 /* Pods-BatikIndonesia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BatikIndonesia.debug.xcconfig"; path = "Target Support Files/Pods-BatikIndonesia/Pods-BatikIndonesia.debug.xcconfig"; sourceTree = "<group>"; };
+		7C4C5C9196A84C1E94E5829E /* Livvic-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Livvic-BoldItalic.ttf"; path = "../src/assets/fonts/Livvic-BoldItalic.ttf"; sourceTree = "<group>"; };
+		814198BC81C748C49F0E671D /* Livvic-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Livvic-Regular.ttf"; path = "../src/assets/fonts/Livvic-Regular.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = BatikIndonesia/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		88AE65F7346E453688987EC9 /* Livvic-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Livvic-Bold.ttf"; path = "../src/assets/fonts/Livvic-Bold.ttf"; sourceTree = "<group>"; };
 		8ABC16AA9FF3E6C998339CBF /* Pods-BatikIndonesia-BatikIndonesiaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BatikIndonesia-BatikIndonesiaTests.release.xcconfig"; path = "Target Support Files/Pods-BatikIndonesia-BatikIndonesiaTests/Pods-BatikIndonesia-BatikIndonesiaTests.release.xcconfig"; sourceTree = "<group>"; };
+		8B130FFE8C074F96943B12E2 /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
+		8CDD448061F44A8990D53D9F /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
+		94B973B6E4DB47748CFF4857 /* Livvic-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Livvic-Thin.ttf"; path = "../src/assets/fonts/Livvic-Thin.ttf"; sourceTree = "<group>"; };
+		97B5599F533F4232A0FFA36A /* Livvic-SemiBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Livvic-SemiBoldItalic.ttf"; path = "../src/assets/fonts/Livvic-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		9A1D10C10A7F470CBFFFA3BC /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
 		A734999E3670BFB24B7D58ED /* Pods-BatikIndonesia-BatikIndonesiaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BatikIndonesia-BatikIndonesiaTests.debug.xcconfig"; path = "Target Support Files/Pods-BatikIndonesia-BatikIndonesiaTests/Pods-BatikIndonesia-BatikIndonesiaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B12F16A260AB4310A146EA46 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
+		B76FB33186B24687BC3EA2D7 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
+		CCDB2CB8C0444E8E9BE19798 /* Livvic-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Livvic-SemiBold.ttf"; path = "../src/assets/fonts/Livvic-SemiBold.ttf"; sourceTree = "<group>"; };
 		D864D856D33CA32E4A0E41C0 /* libPods-BatikIndonesia-BatikIndonesiaTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BatikIndonesia-BatikIndonesiaTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD2CCF8351F744D9B4528E11 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
+		DE8F5C8B37784A519D0D9F98 /* Livvic-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Livvic-Black.ttf"; path = "../src/assets/fonts/Livvic-Black.ttf"; sourceTree = "<group>"; };
+		E03AD3BADFDB40F88FAFCC97 /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
+		E298A0EEC1FD43FC8EEA854B /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
+		E36706F0A5874D839A55B2D6 /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
+		E8E10B4C09DC4813B533F4C2 /* Livvic-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Livvic-BlackItalic.ttf"; path = "../src/assets/fonts/Livvic-BlackItalic.ttf"; sourceTree = "<group>"; };
+		E8FDBC7D8FB24D29B4465E38 /* Livvic-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Livvic-MediumItalic.ttf"; path = "../src/assets/fonts/Livvic-MediumItalic.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		FB1CE5D6ABC04B9BAC861B14 /* Livvic-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Livvic-Medium.ttf"; path = "../src/assets/fonts/Livvic-Medium.ttf"; sourceTree = "<group>"; };
+		FBBC78F25C504ACF9F829615 /* Livvic-ThinItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Livvic-ThinItalic.ttf"; path = "../src/assets/fonts/Livvic-ThinItalic.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +154,45 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5891EE4EC1294E6084ACD2CE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DE8F5C8B37784A519D0D9F98 /* Livvic-Black.ttf */,
+				E8E10B4C09DC4813B533F4C2 /* Livvic-BlackItalic.ttf */,
+				88AE65F7346E453688987EC9 /* Livvic-Bold.ttf */,
+				7C4C5C9196A84C1E94E5829E /* Livvic-BoldItalic.ttf */,
+				6AAE298D75D74D46A03A5572 /* Livvic-ExtraLight.ttf */,
+				2696B3D6DFEF4330AADC7D06 /* Livvic-ExtraLightItalic.ttf */,
+				3155EBB74BC744DE8356FF91 /* Livvic-Italic.ttf */,
+				37BB0F617ABB47D7812D386E /* Livvic-Light.ttf */,
+				5A964E5E45C145738A57C1F6 /* Livvic-LightItalic.ttf */,
+				FB1CE5D6ABC04B9BAC861B14 /* Livvic-Medium.ttf */,
+				E8FDBC7D8FB24D29B4465E38 /* Livvic-MediumItalic.ttf */,
+				814198BC81C748C49F0E671D /* Livvic-Regular.ttf */,
+				CCDB2CB8C0444E8E9BE19798 /* Livvic-SemiBold.ttf */,
+				97B5599F533F4232A0FFA36A /* Livvic-SemiBoldItalic.ttf */,
+				94B973B6E4DB47748CFF4857 /* Livvic-Thin.ttf */,
+				FBBC78F25C504ACF9F829615 /* Livvic-ThinItalic.ttf */,
+				8B130FFE8C074F96943B12E2 /* AntDesign.ttf */,
+				B12F16A260AB4310A146EA46 /* Entypo.ttf */,
+				030D8ED8952A49E1821BD3C4 /* EvilIcons.ttf */,
+				E03AD3BADFDB40F88FAFCC97 /* Feather.ttf */,
+				9A1D10C10A7F470CBFFFA3BC /* FontAwesome.ttf */,
+				72F487BA668046768A889833 /* FontAwesome5_Brands.ttf */,
+				E298A0EEC1FD43FC8EEA854B /* FontAwesome5_Regular.ttf */,
+				266028EBE40449499C02E910 /* FontAwesome5_Solid.ttf */,
+				E36706F0A5874D839A55B2D6 /* Fontisto.ttf */,
+				8CDD448061F44A8990D53D9F /* Foundation.ttf */,
+				449D6126E996466BA6DB34F1 /* Ionicons.ttf */,
+				DD2CCF8351F744D9B4528E11 /* MaterialCommunityIcons.ttf */,
+				4A06334BC1D44389BB621189 /* MaterialIcons.ttf */,
+				B76FB33186B24687BC3EA2D7 /* Octicons.ttf */,
+				5D6AF62AF24A4597ABFE8A8A /* SimpleLineIcons.ttf */,
+				5C75F82A066B41E0BEF425B7 /* Zocial.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		5AC3D1D897806C0870427D0B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +220,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				5AC3D1D897806C0870427D0B /* Pods */,
+				5891EE4EC1294E6084ACD2CE /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -244,6 +332,22 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				6C82F309185345A891241B3B /* Livvic-Black.ttf in Resources */,
+				95F6D84DA93C42DCB323E11B /* Livvic-BlackItalic.ttf in Resources */,
+				4CD89DFF265843219D0C88D8 /* Livvic-Bold.ttf in Resources */,
+				141803CCF1CD4F34A69B5DE1 /* Livvic-BoldItalic.ttf in Resources */,
+				E519B41886CB4B7C856A07E2 /* Livvic-ExtraLight.ttf in Resources */,
+				DFBA923434A843D4A483903F /* Livvic-ExtraLightItalic.ttf in Resources */,
+				65791B6F1AFF49D9A2D3EEB7 /* Livvic-Italic.ttf in Resources */,
+				D3944B2CDC374A43B852ED3C /* Livvic-Light.ttf in Resources */,
+				6F18B2E1926A459280CD1900 /* Livvic-LightItalic.ttf in Resources */,
+				D9DE906DC47C461FAA77141A /* Livvic-Medium.ttf in Resources */,
+				D2EB8D30804C49D2B988BFD4 /* Livvic-MediumItalic.ttf in Resources */,
+				0C05C44A870749CAA55E176C /* Livvic-Regular.ttf in Resources */,
+				B2BDAF05AC1B4FF1B6FB41DC /* Livvic-SemiBold.ttf in Resources */,
+				6D04967D66CE4CE48E0DB823 /* Livvic-SemiBoldItalic.ttf in Resources */,
+				A39DDD30E3B549F6B33A7007 /* Livvic-Thin.ttf in Resources */,
+				6495FCEFF2044E4DBEEB39AC /* Livvic-ThinItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

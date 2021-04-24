@@ -10,6 +10,19 @@ import MainScreen from './src/screen/main';
 const queryClient = new QueryClient();
 
 const theme: ThemeType = {
+  fontFamily: {
+    normal: 'Livvic-Regular',
+    bold: 'Livvic-Bold',
+    100: 'Livvic-Thin',
+    200: 'Livvic-ExtraLight',
+    300: 'Livvic-Light',
+    400: 'Livvic-Regular',
+    500: 'Livvic-Medium',
+    600: 'Livvic-SemiBold',
+    700: 'Livvic-Bold',
+    800: 'Livvic-Bold',
+    900: 'Livvic-Black',
+  },
   colors: {
     primary50: '#def6fe',
     primary100: '#bde6ef',
@@ -26,6 +39,9 @@ const theme: ThemeType = {
     ...defaultTheme.components,
     Input: {
       bg: 'gray100',
+    },
+    Text: {
+      fontFamily: 'Livvic',
     },
   },
 };
