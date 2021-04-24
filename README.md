@@ -1,3 +1,3 @@
 ## Batik Indonesia
 
-![alt text](./screenshots/ios.png 'iOS Home')
+<img src="./screenshots/ios.png" width="320" />
