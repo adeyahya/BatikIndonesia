@@ -1,3 +1,3 @@
 ## Batik Indonesia
 
-![alt text](./screenshots/ios-home.png 'iOS Home')
+![alt text](./screenshots/ios.png 'iOS Home')
