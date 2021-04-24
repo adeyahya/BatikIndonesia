@@ -3,6 +3,9 @@ import {StyleSheet, SafeAreaView} from 'react-native';
 import {ThemeProvider, ThemeType, defaultTheme} from 'react-native-magnus';
 import {QueryClient, QueryClientProvider} from 'react-query';
 import deepMerge from 'deepmerge';
+import {NavigationContainer} from '@react-navigation/native';
+import {createDrawerNavigator} from '@react-navigation/drawer';
+import {createStackNavigator} from '@react-navigation/stack';
 
 // screens
 import MainScreen from './src/screen/main';
@@ -36,7 +39,6 @@ const theme: ThemeType = {
     primary900: '#001016',
   },
   components: {
-    ...defaultTheme.components,
     Input: {
       bg: 'gray100',
     },
@@ -47,15 +49,30 @@ const theme: ThemeType = {
 };
 const extendedTheme = deepMerge(defaultTheme, theme);
 
+const Drawer = createDrawerNavigator();
+const Stack = createStackNavigator();
+
+function RootStack() {
+  return (
+    <Stack.Navigator headerMode="none" initialRouteName="Home">
+      <Stack.Screen name="Home" component={MainScreen} />
+    </Stack.Navigator>
+  );
+}
+
 const App: React.FC = () => {
   return (
-    <QueryClientProvider client={queryClient}>
-      <ThemeProvider theme={extendedTheme}>
-        <SafeAreaView style={styles.container}>
-          <MainScreen />
-        </SafeAreaView>
-      </ThemeProvider>
-    </QueryClientProvider>
+    <NavigationContainer>
+      <QueryClientProvider client={queryClient}>
+        <ThemeProvider theme={extendedTheme}>
+          <SafeAreaView style={styles.container}>
+            <Drawer.Navigator initialRouteName="Root">
+              <Drawer.Screen name="Root" component={RootStack} />
+            </Drawer.Navigator>
+          </SafeAreaView>
+        </ThemeProvider>
+      </QueryClientProvider>
+    </NavigationContainer>
   );
 };
 

@@ -48,7 +48,7 @@ const MainScreen: React.FC = () => {
   };
 
   return (
-    <Div flex={1} position="relative">
+    <Div bg="white" flex={1} position="relative">
       <StatusBar
         animated={true}
         barStyle="dark-content"
