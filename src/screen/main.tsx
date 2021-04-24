@@ -2,9 +2,16 @@ import React from 'react';
 import _filter from 'lodash/filter';
 import useDebounce from 'react-use/lib/useDebounce';
 import {Div, Input} from 'react-native-magnus';
-import {FlatList, ListRenderItem, StatusBar} from 'react-native';
+import {
+  FlatList,
+  ListRenderItem,
+  StatusBar,
+  StyleSheet,
+  SafeAreaView,
+} from 'react-native';
 import {BatikListItemDTO, useBatiksQuery} from '../services/batik';
 import BatikListItem from '../components/BatikListItem';
+import {useNavigation} from '@react-navigation/core';
 
 const itemSeparator = () => (
   <Div w="100%" px={25} alignItems="center">
@@ -13,6 +20,7 @@ const itemSeparator = () => (
 );
 
 const MainScreen: React.FC = () => {
+  const navigation = useNavigation();
   const {data} = useBatiksQuery();
   const [keyword, setKeyword] = React.useState('');
   const [debouncedKeyword, setDebouncedKeyword] = React.useState(keyword);
@@ -43,46 +51,61 @@ const MainScreen: React.FC = () => {
     });
   }, [data, debouncedKeyword]);
 
+  const handleItemPress = React.useCallback(
+    (item: BatikListItemDTO) => {
+      navigation.navigate('BatikDetail', item);
+    },
+    [navigation],
+  );
+
   const itemRenderer: ListRenderItem<BatikListItemDTO> = ({item}) => {
-    return <BatikListItem item={item} />;
+    return <BatikListItem onPress={handleItemPress} item={item} />;
   };
 
   return (
-    <Div bg="white" flex={1} position="relative">
-      <StatusBar
-        animated={true}
-        barStyle="dark-content"
-        backgroundColor="#61dafb"
-      />
-      <Div
-        w="100%"
-        zIndex={1}
-        shadow={isFocusSearch ? 'md' : 'xs'}
-        position="absolute"
-        px={25}
-        py={10}>
-        <Input
-          onFocus={() => setIsFocusSearch(true)}
-          onBlur={() => setIsFocusSearch(false)}
-          value={keyword}
-          onChangeText={setKeyword}
-          focusBorderColor="primary400"
-          rounded="circle"
-          placeholder="Temukan Batik"
-          variant="primary"
+    <SafeAreaView style={styles.container}>
+      <Div bg="white" flex={1} position="relative">
+        <StatusBar
+          animated={true}
+          barStyle="dark-content"
+          backgroundColor="#61dafb"
         />
+        <Div
+          w="100%"
+          zIndex={1}
+          shadow={isFocusSearch ? 'md' : 'xs'}
+          position="absolute"
+          px={25}
+          py={10}>
+          <Input
+            onFocus={() => setIsFocusSearch(true)}
+            onBlur={() => setIsFocusSearch(false)}
+            value={keyword}
+            onChangeText={setKeyword}
+            focusBorderColor="primary400"
+            rounded="circle"
+            placeholder="Temukan Batik"
+            variant="primary"
+          />
+        </Div>
+        <Div flex={1}>
+          <FlatList
+            ListHeaderComponent={() => <Div h={60} />}
+            renderItem={itemRenderer}
+            ItemSeparatorComponent={itemSeparator}
+            keyExtractor={item => '' + item.id}
+            data={filteredData}
+          />
+        </Div>
       </Div>
-      <Div flex={1}>
-        <FlatList
-          ListHeaderComponent={() => <Div h={60} />}
-          renderItem={itemRenderer}
-          ItemSeparatorComponent={itemSeparator}
-          keyExtractor={item => '' + item.id}
-          data={filteredData}
-        />
-      </Div>
-    </Div>
+    </SafeAreaView>
   );
 };
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+});
 
 export default MainScreen;

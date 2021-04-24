@@ -2,13 +2,20 @@ import React from 'react';
 import {Button, Image, Text, Div, ButtonProps} from 'react-native-magnus';
 import {BatikListItemDTO} from '../services/batik';
 
-export interface BatikListItem extends ButtonProps {
+export interface BatikListItem extends Omit<ButtonProps, 'onPress'> {
+  onPress?: (item: BatikListItemDTO) => void;
   item: BatikListItemDTO;
 }
 
-const BatikListItem: React.FC<BatikListItem> = ({item, ...props}) => {
+const BatikListItem: React.FC<BatikListItem> = ({item, onPress, ...props}) => {
   return (
-    <Button alignItems="flex-start" bg="white" row px={20} {...props}>
+    <Button
+      alignItems="flex-start"
+      bg="white"
+      row
+      px={20}
+      onPress={onPress ? () => onPress(item) : undefined}
+      {...props}>
       <Image
         bg="gray500"
         rounded={20}

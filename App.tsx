@@ -1,5 +1,4 @@
 import React from 'react';
-import {StyleSheet, SafeAreaView} from 'react-native';
 import {ThemeProvider, ThemeType, defaultTheme} from 'react-native-magnus';
 import {QueryClient, QueryClientProvider} from 'react-query';
 import deepMerge from 'deepmerge';
@@ -9,6 +8,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 
 // screens
 import MainScreen from './src/screen/main';
+import BatikDetailScreen from './src/screen/batik-detail';
 
 const queryClient = new QueryClient();
 
@@ -56,6 +56,7 @@ function RootStack() {
   return (
     <Stack.Navigator headerMode="none" initialRouteName="Home">
       <Stack.Screen name="Home" component={MainScreen} />
+      <Stack.Screen name="BatikDetail" component={BatikDetailScreen} />
     </Stack.Navigator>
   );
 }
@@ -65,21 +66,13 @@ const App: React.FC = () => {
     <NavigationContainer>
       <QueryClientProvider client={queryClient}>
         <ThemeProvider theme={extendedTheme}>
-          <SafeAreaView style={styles.container}>
-            <Drawer.Navigator initialRouteName="Root">
-              <Drawer.Screen name="Root" component={RootStack} />
-            </Drawer.Navigator>
-          </SafeAreaView>
+          <Drawer.Navigator initialRouteName="Root">
+            <Drawer.Screen name="Root" component={RootStack} />
+          </Drawer.Navigator>
         </ThemeProvider>
       </QueryClientProvider>
     </NavigationContainer>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-});
 
 export default App;
