@@ -3,8 +3,6 @@ import {useQuery} from 'react-query';
 // @ts-ignore
 import {BATIK_KITA_BASE_API} from '@env';
 
-console.log(BATIK_KITA_BASE_API);
-
 export interface BatikListItemDTO {
   id: number;
   nama_batik: string;
