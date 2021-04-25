@@ -3,18 +3,23 @@ import React from 'react';
 import {StatusBar} from 'react-native';
 import {Text, Image, Div, ScrollDiv} from 'react-native-magnus';
 import {BatikListItemDTO} from '../services';
+import Header from '../components/Header';
+import HeaderBackButton from '../components/HeaderBackButton';
 
 const BatikDetailScreen: React.FC = () => {
   const route = useRoute();
   const _data: BatikListItemDTO = route.params as any;
   return (
-    <ScrollDiv flex={1} bg="white">
+    <ScrollDiv flex={1} bg="white" position="relative">
       <StatusBar
         animated={true}
         barStyle="light-content"
         backgroundColor="#61dafb"
       />
-      <Image h={300} source={{uri: _data.link_batik}} />
+      <Header position="absolute" px={20} top={50} left={0} zIndex={2}>
+        <HeaderBackButton rounded="circle" />
+      </Header>
+      <Image h={300} bg="gray400" source={{uri: _data.link_batik}} />
       <Div px={20} py={15}>
         <Text
           textTransform="capitalize"
