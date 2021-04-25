@@ -1,7 +1,7 @@
 import React from 'react';
 import _filter from 'lodash/filter';
 import useDebounce from 'react-use/lib/useDebounce';
-import {Div, Input} from 'react-native-magnus';
+import {Div, Icon, Input} from 'react-native-magnus';
 import {
   FlatList,
   ListRenderItem,
@@ -82,10 +82,14 @@ const MainScreen: React.FC = () => {
             onBlur={() => setIsFocusSearch(false)}
             value={keyword}
             onChangeText={setKeyword}
+            px={15}
             focusBorderColor="primary400"
             rounded="circle"
             placeholder="Temukan Batik"
             variant="primary"
+            suffix={
+              <Icon fontSize={18} fontFamily="Ionicons" name="search-outline" />
+            }
           />
         </Div>
         <Div flex={1}>
